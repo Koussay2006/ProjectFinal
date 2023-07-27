@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MyHome</title>
+</head>
+<body>
+    <!-- The Header Section -->
+    <header>
+      <div id="home" href="#home">
+          <nav class="nav" id="nav">
+            <label class="logo">MyHome</label>
+            <ul>
+              <li>
+                <a class="active" href="home.html">Home</a>
+              </li>
+              <li>
+                <a href="features.html">Features</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <div class="shopping">
+                <img src="image/cart-fill.svg">
+                <span class="quantity">0</span>
+              </div></li>
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg></a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <div class="bgimg"></div>
+    
+    <div class="content">
+        <h2>
+            My<span>Home</span>
+        </h2>
+        <p>
+            Is an online destination for homeowners and interior design enthusiasts to discover and purchase a wide range of high-quality and stylish home decorations. The website aims to provide a seamless and inspiring shopping experience, catering to customers seeking to elevate the ambiance and aesthetic of their living spaces.
+        </p>
+    </div>
+
+    <div class="container">
+      <div class="first-pic">
+        <img src="image/pic1.jpg" class="first-pic">
+      </div>
+      <div class="first-pic-par">
+        <p>This Is A Site That Can Help You To Find Everything About Home Decoration In The Best Quality And At The Best Price</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="second-pic-par">
+        <p>You Can Find Here Everything About Home Like Decoration, Machines, Beds, And So Much Other Things</p>
+      </div>
+      <div class="second-pic">
+        <img src="image/pic2.jpg" class="second-pic">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="third-pic">
+        <img src="image/pic3.jpg" class="third-pic">
+      </div>
+      <div class="third-pic-par">
+        <p>And You Can Find This Store All Over The World There Are About 5-10 Stores In Each Country Also You Can Buy Online And Delivery Within 24 Hours</p>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+  <script>
+    var prevScrollPos = window.pageYOffset;
+    var nav = document.getElementById("nav");
+
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollPos > currentScrollPos) {
+            nav.style.top = "0";
+        } else {
+            nav.style.top = "-100px"; // Assuming the height of the nav is 60px
+        }
+        prevScrollPos = currentScrollPos;
+    };
+  </script>
+</html>

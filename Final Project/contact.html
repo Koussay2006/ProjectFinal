@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MyHome</title>
+</head>
+<body>
+
+  <!-- The Header Section -->
+  <header>
+    <div id="home" href="#home">
+        <nav class="nav" id="nav">
+          <label class="logo">MyHome</label>
+          <ul>
+            <li>
+              <a class="active" href="home.html">Home</a>
+            </li>
+            <li>
+              <a href="features.html">Features</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <div class="shopping">
+              <img src="image/cart-fill.svg">
+              <span class="quantity">0</span>
+            </div></li>
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg></a></li>
+          </ul>
+        </nav>
+      </div>
+  </header>
+  
+  <div class="bgimg"></div>
+
+  <section class="contact">
+    <div class="content">
+       <h2>Contact Us</h2>
+          <p>
+              Contact Us
+
+              We value your feedback, questions, and suggestions. Please feel free to get in touch with us using the contact in
+              
+              formation provided below. Whether you have inquiries about our products, need assistance with an order, or simply want to share your thoughts, we're here to help.
+
+              Our dedicated support team is available during business hours to ensure a prompt and helpful response to your inquiries. Additionally, you can reach out to us on our social media channels for updates, news, and engaging conversations.
+
+               We look forward to hearing from you and thank you for your interest in our services.
+          </p>
+    </div>
+    <div class="container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="text">
+                    <h3>Phone number:</h3>
+                    <p>(+216) 46 500 547</p>
+                </div>
+            </div>
+            <div class="box">
+          <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+          <div class="text">
+            <h3>Email:</h3>
+            <p>koussaymeziou123@gmail.com</p>
+          </div>
+        </div>
+    </div>
+    <div class="contactForm">
+        <form>
+            <h2>Log In</h2>
+            <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="" required="required" class="email">
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <input type="password" name="" required="required">
+              <span>Password</span>
+            </div>
+            <div class="inputBox">
+              <input type="submit" name="" value="Send">
+            </div>
+          </form>
+        </div>
+    </div>
+  </section>
+</body>
+<script src="app.js"></script>
+<script>
+  var prevScrollPos = window.pageYOffset;
+  var nav = document.getElementById("nav");
+
+  window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos) {
+          nav.style.top = "0";
+      } else {
+          nav.style.top = "-100px"; // Assuming the height of the nav is 60px
+      }
+      prevScrollPos = currentScrollPos;
+  };
+</script>
+</html>
